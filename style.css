@@ -323,41 +323,75 @@
 @media (max-width: 480px) {
     #header {
         display: flex;
-        align-items: center;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
         height: 100px;
+        background-color: #6de4fe;
     }
 
     #logo {
-        height: 100px;
-        width: 150px;
+        height: 100px; /* Ajuste o tamanho da logo para telas menores */
+        width: 200px; /* Ajuste o tamanho da logo para telas menores */
+        margin: 0; /* Remove margens anteriores */
     }
 
     #buttonHeaderOrcamento,
     #buttonHeaderContatos {
-        visibility: hidden;
+        display: none; /* Oculta os botões completamente */
     }
 
     #explanatoryGrid {
-        margin-left: 20px;
+        margin-left: 2px;
     }
 
     .explanatoryText {
-        width: 250px;
+        width: 230px;
     }
 
     #benefitsTextH1 {
-        margin: 20px 50px;
+        width: 250px;
+    }
+
+    .benefitsTextP {
+        font-size: 30px;
+    }
+
+    .benefitsImg {
+        width: 400px;
+        margin: 10px 0 60px 0;
+    }
+
+    #explanatoryText2 {
+        margin: 20px 0 20px 0;
     }
 
     #responsibilityTitle {
         margin: 10px 50px;
     }
 
-    #formContainer {
+    #formTitl {
+        margin-top: 10px;
+    }
+
+    .formContainer {
         margin: 5px 20px;
     }
 
+    #headerBottomColum {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 150px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+    }
+
+    #text{
+
+    }
+
     #bottomHeaderImg {
-        height: 70px;
+        width: 200px;    
     }
 }
