@@ -41,7 +41,7 @@
 }
 
 #space {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 #explanatoryGrid {
@@ -344,8 +344,19 @@
         margin-left: 2px;
     }
 
+    .space{
+        margin-bottom: 100px;
+    }
+
     .explanatoryText {
-        width: 210px;
+        width: 180px;
+        font-size: 20px;
+    }
+
+    .benefitsImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #benefitsTextH1 {
