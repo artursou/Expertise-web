@@ -1,7 +1,7 @@
 const explanatoryTexts = document.querySelectorAll('.explanatoryText');
 
 explanatoryTexts.forEach((element, index) => {
-    element.style.marginLeft = `${index * 60}px`; // Aumenta 20px a cada elemento
+    element.style.marginLeft = `${index * 60}px`; 
 });
 
 const textarea = document.getElementById('myTextarea');

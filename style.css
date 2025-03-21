@@ -250,9 +250,14 @@
         margin: 20px 300px;
     }
 
+    .benefitsImg{
+        width: 350px;
+    }
+
     #responsibilityTitle {
         margin: 10px 300px;
     }
+
 
     #formContainer {
         margin: 5px 150px;
