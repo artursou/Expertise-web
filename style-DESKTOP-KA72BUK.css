@@ -1,0 +1,417 @@
+/* Estilos base (para telas maiores) */
+* {
+    margin: 0;
+}
+
+#header {
+    background-color: #6de4fe;
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    column-gap: 600px;
+}
+
+#logo {
+    margin-left: 90px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    height: 70px;
+    width: 124px;
+}
+
+#buttonHeaderOrcamento,
+#buttonHeaderContatos {
+    width: 215px;
+    height: 45px;
+    background-color: #28d8ff;
+    border: 0px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 75px;
+    margin-bottom: 25px;
+}
+
+#explanatoryMenu {
+    background-image: url(./Imagens/plantacao.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 607px;
+    width: 100%;
+}
+
+#space {
+    margin-bottom: 50px;
+}
+
+#explanatoryGrid {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 20px;
+    margin-left: 200px;
+}
+
+.explanatoryText {
+    background-color: #28d8ff;
+    padding: 10px 0;
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 0;
+    box-shadow: 0px 15px 10px #2b2c537e;
+}
+
+.explanatoryText:hover {
+    box-shadow: 0px 15px 20px #10101f7e;
+    transform: translateY(-2px);
+    transition-duration: 0.5s;
+}
+
+#benefitsTextH1 {
+    background-color: #28d8ff;
+    text-align: center;
+    border-radius: 30px;
+    margin: 20px 650px;
+}
+
+.benefitsTextP {
+    font-size: 20px;
+}
+
+.benefitsGridRow {
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+}
+
+#benefitsGrid {
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    margin-left: 20px;
+}
+
+#explanatoryGridInfo {
+    margin: 40px 25px;
+    display: flex;
+    align-items: center;
+}
+
+#imgExplanatory {
+    width: 900px;
+    height: 506px;
+    border-radius: 50px;
+}
+
+#explanatoryText2 {
+    background-color: #6de4fe;
+    margin: 0;
+    text-align: justify;
+    margin: 0px 15px;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#responsibilityTitle {
+    background-color: #6de4fe;
+    text-align: center;
+    border-radius: 30px;
+    margin: 10px 570px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#responsibilityGrid {
+    display: flex;
+    align-items: center;
+}
+
+#responsibilityText {
+    background-color: #6de4fe;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#responsibilityImg {
+    margin-right: 25px;
+    width: 1066px;
+    height: 600px;
+}
+
+#formTitle {
+    margin: 20px 0px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#formGrid {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+}
+
+.formContainer {
+    background-color: #6de4fe;
+    margin: 5px 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.input {
+    background-color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#myTextarea {
+    resize: none;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submitButton {
+    margin: 30px auto;
+    background-color: #a0eeff;
+    border: 0;
+    width: 200px;
+    height: 30px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#submitButton:hover {
+    box-shadow: 0px 15px 20px #10101f7e;
+    transform: translateY(-0.5px);
+    transition-duration: 0.5s;
+}
+
+#bottomHeader {
+    background-color: #6de4fe;
+    width: 100%;
+}
+
+#headerBottomColum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 150px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+#text {
+    position: absolute;
+    left: 15px;
+    margin: 0;
+}
+
+#bottomHeaderImg {
+    height: 100px;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 1200px) {
+    #header {
+        column-gap: 300px;
+    }
+
+    #logo {
+        margin-left: 50px;
+    }
+
+    #buttonHeaderOrcamento,
+    #buttonHeaderContatos {
+        margin-left: 25px;
+    }
+
+    #explanatoryGrid {
+        margin-left: 100px;
+    }
+
+    #benefitsTextH1 {
+        margin: 20px 300px;
+    }
+
+    #responsibilityTitle {
+        margin: 10px 300px;
+    }
+
+    #formContainer {
+        margin: 5px 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        grid-auto-flow: row;
+        column-gap: 0;
+        text-align: center;
+    }
+
+    #logo {
+        margin-left: 0;
+    }
+
+    #buttonHeaderOrcamento,
+    #buttonHeaderContatos {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #explanatoryGrid {
+        margin-left: 50px;
+    }
+
+    .explanatoryText {
+        width: 300px;
+    }
+
+    #benefitsTextH1 {
+        margin: 20px 100px;
+    }
+
+    #benefitsGrid {
+        grid-auto-flow: row;
+    }
+
+    #explanatoryGridInfo {
+        flex-direction: column;
+    }
+
+    #imgExplanatory {
+        width: 100%;
+        height: auto;
+    }
+
+    #responsibilityTitle {
+        margin: 10px 100px;
+    }
+
+    #responsibilityGrid {
+        flex-direction: column;
+    }
+
+    #responsibilityImg {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    #formContainer {
+        margin: 5px 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        height: 100px;
+        background-color: #6de4fe;
+    }
+
+    #logo {
+        height: 100px; /* Ajuste o tamanho da logo para telas menores */
+        width: 200px; /* Ajuste o tamanho da logo para telas menores */
+        margin: 0; /* Remove margens anteriores */
+    }
+
+    #buttonHeaderOrcamento,
+    #buttonHeaderContatos {
+        display: none; /* Oculta os botões completamente */
+    }
+
+    #explanatoryGrid {
+        margin-left: 2px;
+    }
+
+    .space{
+        margin-bottom: 100px;
+    }
+
+    .explanatoryText {
+        width: 180px;
+        font-size: 20px;
+    }
+
+    .benefitsImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #benefitsTextH1 {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .benefitsTextP {
+        font-size: 30px;
+    }
+
+    .benefitsImg {
+        width: 350px;
+        margin: 10px 0 60px 0;
+    }
+
+    #explanatoryText2 {
+        margin: 20px 0 20px 0;
+    }
+
+    #responsibilityTitle {
+        margin: 10px 50px;
+    }
+
+    #formTitl {
+        margin-top: 10px;
+    }
+
+    .formContainer {
+        margin: 5px 20px;
+    }
+
+    #headerBottomColum {
+        display: flex;
+        flex-direction: column; /* Altera a direção do flex para vertical */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        position: relative;
+        height: 150px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+    }
+
+    #headerBottomColum{
+        height: 100%;
+    }
+
+    #text{
+        margin-top: -100px;
+    }
+    
+    #bottomHeaderImg {
+        width: 200px; 
+        margin-top: 80px;   
+    }
+}
