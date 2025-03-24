@@ -235,6 +235,8 @@
 
     #logo {
         margin-left: 50px;
+        width: 150px;
+        height: 75px;
     }
 
     #buttonHeaderOrcamento,
@@ -251,16 +253,36 @@
     }
 
     .benefitsImg{
-        width: 350px;
+        width: 220px;
+    }
+
+    #explanatoryGridInfo{
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 15px;
+    }
+
+    #imgExplanatory{
+        width: 700px;
     }
 
     #responsibilityTitle {
-        margin: 10px 300px;
+        margin: 10px 150px;
     }
 
+    #responsibilityGrid{
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: center;
+    }
 
-    #formContainer {
-        margin: 5px 150px;
+    #responsibilityImg{
+        width: 500px;
+        margin-left: 15px;
+    }
+
+    .formContainer {
+        margin: 5px 30px;
     }
 }
 
@@ -274,13 +296,17 @@
     }
     
     #logo {
-        margin-left: 0;
+        margin-left: 10px;
     }
     
     #buttonHeaderOrcamento,
     #buttonHeaderContatos {
         margin-left: 0;
-        margin-bottom: 5px; /* Removendo o espaço extra que pode quebrar a linha */
+        margin-right: 10px;
+        margin-bottom: 5px; 
+        width: 120px;
+        height: 30px;
+        font-size: 11px;
     }
     
 
@@ -298,10 +324,21 @@
 
     #benefitsGrid {
         grid-auto-flow: row;
+        justify-content: center;
+        align-items: center; /* Centraliza verticalmente os itens */
+        justify-items: center; /* Centraliza horizontalmente os itens */
+    }
+
+    .benefitsImg{
+        margin: 15px 0;
     }
 
     #explanatoryGridInfo {
         flex-direction: column;
+    }
+
+    #imgExplanatory{
+        margin-bottom: 15px;
     }
 
     #imgExplanatory {
@@ -323,7 +360,11 @@
         margin-right: 0;
     }
 
-    #formContainer {
+    #text{
+        font-size: 12px;
+    }
+
+    .formContainer {
         margin: 5px 50px;
     }
 }
