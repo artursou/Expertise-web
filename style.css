@@ -405,7 +405,9 @@
     }
 
     #benefitsTextH1 {
+        margin: 20px auto;
         width: 250px;
+        text-align: center;
     }
 
     #benefitsGrid {
