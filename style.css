@@ -404,12 +404,6 @@
         font-size: 20px;
     }
 
-    .benefitsImg{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     #benefitsTextH1 {
         width: 250px;
         display: flex;
@@ -417,13 +411,24 @@
         justify-content: center;
     }
 
-    .benefitsTextP {
-        font-size: 30px;
+    #benefitsGrid {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        text-align: center; /* Centraliza o texto */
+        row-gap: 20px; /* Espaçamento entre os itens */
     }
 
     .benefitsImg {
         width: 350px;
-        margin: 10px 0 60px 0;
+        margin: 10px auto;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .benefitsTextP{
+        font-size: 30px;
     }
 
     #explanatoryText2 {
@@ -443,16 +448,12 @@
     }
 
     #headerBottomColum {
-        display: flex;
-        flex-direction: column; /* Altera a direção do flex para vertical */
-        align-items: center; /* Centraliza os itens horizontalmente */
-        justify-content: center; /* Centraliza os itens verticalmente */
-        position: relative;
-        height: 150px;
-        border: 1px solid #ccc;
-        margin-top: 10px;
+        display: grid;
+        flex-direction: row; /* Alinha os itens em uma coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza verticalmente */
     }
-
+    
     #headerBottomColum{
         height: 100%;
     }
