@@ -78,17 +78,19 @@
     font-size: 20px;
 }
 
-.benefitsGridRow {
-    display: grid;
-    grid-auto-flow: row;
-    text-align: center;
-}
-
 #benefitsGrid {
     display: grid;
     grid-auto-flow: column;
     columns: auto;
+    justify-content: center;
+    column-gap: 80px;
     margin-left: 20px;
+}
+
+.benefitsGridRow {
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
 }
 
 #explanatoryGridInfo {
