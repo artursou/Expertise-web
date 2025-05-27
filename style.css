@@ -229,6 +229,40 @@
     height: 100px;
 }
 
+@media (max-width: 1450px) {
+    
+    #header {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        padding: 10px 0; 
+    }
+
+    #headerButtons {
+        display: flex; /* Continua como flexbox para os botões */
+        gap: 15px; /* Espaço entre os botões */
+        justify-content: center; /* Centraliza os botões dentro do seu container */
+        width: 100%; /* Ocupa a largura total para ajudar na centralização */
+    }
+
+    #buttonHeaderOrcamento,
+    #buttonHeaderContatos {
+        width: 150px; /* Reduzindo a largura dos botões para 1450px */
+        height: 40px;
+        font-size: 14px;
+        margin: 0; /* Garante que não haja margens extras */
+    }
+
+
+    #benefitsTextH1 {
+        margin: 20px 500px;
+    }
+
+    .benefitsImg{
+        width: 300px;
+    }
+}
+
 /* Media Queries para telas menores */
 @media (max-width: 1200px) {
     #header {
@@ -332,7 +366,7 @@
     }
 
     .benefitsImg{
-        margin: 15px 0;
+        width: 20px;
     }
 
     #explanatoryGridInfo {
